@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <title>React ⚛️</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <h1>Getting Started with React</h1>
+    <script type="text/javascript">
+    let ul = React.createElement(
+     "ul", 
+      { style: { color: "blue"} },
+    React.createElement("li", null, "Monday"),
+    React.createElement("li", null, "Tuesday")
+        );
+    ReactDOM.render(
+        ul,
+        document.getElementById("root")
+        //  React.createElement("h1", null, "getting started with react" 
+    );
+    </script>
+  </body>
+</html>
