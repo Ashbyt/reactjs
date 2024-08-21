@@ -1,0 +1,21 @@
+
+import './App.css';
+import { useState } from "react";
+
+// https://www.linkedin.com/learning/react-js-essential-training-14836121/understanding-the-usestate-hook?contextUrn=urn%3Ali%3AlyndaLearningPath%3A593715e0498e9e9be7fb8506&resume=false
+
+
+
+function App({library}) {
+  const [emotion, setEmotion] = useState("happy");
+  
+  return (
+    <div className="App">
+     <h1>Current emotion is {emotion}</h1>
+     <button onClick={() => setEmotion("sad")}>Sad</button>
+     <button onClick={() => setEmotion("Excited")}>Excited</button>
+    </div>
+  );
+}
+
+export default App;
